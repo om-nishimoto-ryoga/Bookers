@@ -1,0 +1,10 @@
+<p id="notice">
+ <%=  notice %> 
+</p>
+
+<p><strong>Title:</strong> <%= @bookers.title %></p>
+<p><strong>Body:</strong> <%= @bookers.body %></p>
+
+<%= link_to "Edit", edit_booker_path(@bookers) %>
+ | 
+<%= link_to "Back", bookers_path, class:"back" %>
