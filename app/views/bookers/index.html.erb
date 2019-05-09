@@ -16,9 +16,9 @@
      <tr>
     	<td><span><%= post.title %></span></td>
     	<td><span><%= post.body %></span></td>
-    	<td><%= link_to "Show", booker_path(post.id), class:"show_" %></td>
-    	<td><%= link_to "Edit", edit_booker_path(post.id), class:"edit_" %></td>
-    	<td><%= link_to "Destroy", booker_path(post.id), method: :delete, "data-confirm" => "Are you sure?", class:"destroy_" %></td>
+    	<td><%= link_to "Show", booker_path(post.id), class:"show_#{post.id}" %></td>
+    	<td><%= link_to "Edit", edit_booker_path(post.id), class:"edit_#{post.id}" %></td>
+    	<td><%= link_to "Destroy", booker_path(post.id), method: :delete, "data-confirm" => "Are you sure?", class:"destroy_#{post.id}" %></td>
      </tr>
     <% end %>
     </tbody>

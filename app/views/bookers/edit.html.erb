@@ -6,6 +6,6 @@
     <div><%= f.text_area :body, class:"book_body" %></div>
     <div><%= f.submit 'Update Book' %> </div>
 <% end %>
-<%= link_to "Show", booker_path(@bookers), class:"show_" %>
+<%= link_to "Show", booker_path(@bookers), class:"show_#{@bookers.id}" %>
  | 
 <%= link_to "Back", bookers_path, class:"back" %>
